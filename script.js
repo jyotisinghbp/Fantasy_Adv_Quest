@@ -24,7 +24,19 @@ const adventure = {
     choices: []
   },
   swordPath: {
-    text: "With the sword, you defeat a dragon and find treasure. You win!",
+    text: "With the sword, you defeat a dragon and find a healing potion.",
+    choices: [
+      { text: "Take the potion", next: "potionPath", item: "Healing Potion" }
+    ]
+  },
+  potionPath: {
+    text: "You feel stronger! Ahead, you see a glowing shield on a pedestal.",
+    choices: [
+      { text: "Take the shield", next: "shieldPath", item: "Mystical Shield" }
+    ]
+  },
+  shieldPath: {
+    text: "Fully equipped, you conquer the dark lord and claim ultimate victory! You win!",
     choices: []
   },
   walkAway: {

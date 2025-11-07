@@ -10,7 +10,7 @@ body {
   background-size: cover;       /* makes the image cover the whole page */
   background-position: center;  /* centers the image */
   background-repeat: no-repeat; /* prevents tiling */
-  background-color: #1e1e2f;
+  background-color:rgba(34, 49, 34, 0.9); 
   color: #f0f0f0;
   text-align: center;
   padding: 20px;
@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 600px;
   margin: auto;
-  background-color: #2e2e3e;
+  background-color: rgba(34, 49, 34, 0.9); /* Dark green overlay */
   padding: 20px;
   border-radius: 10px;
   position: absolute;
@@ -31,7 +31,7 @@ body {
 button {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #6b8e23; /* Olive green */
   border: none;
   border-radius: 5px;
   color: white;
@@ -39,27 +39,27 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #556b2f; /* Darker olive */
 }
 
 #inventory {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: rgba(46, 46, 62, 0.95);
+  background-color: rgba(34, 49, 34, 0.95);
   padding: 15px;
   border-radius: 10px;
   color: #fff;
   width: 180px;
   font-size: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4)
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 #inventory h2 {
   margin: 0 0 10px;
   font-size: 16px;
   text-align: center;
-  color: #4caf50;
+  color: #6b8e23;
   font-weight: bold;
 }
 
@@ -72,10 +72,10 @@ button:hover {
 #inventory-list li {
   padding: 6px 8px;
   margin-bottom: 6px;
-  background-color: #3a3a4f;
+  background-color: #3a4a3a;
   border-radius: 6px;
   text-align: center;
   font-size: 13px;
   color: #f0f0f0;
-  border: 1px solid #555;
+  border: 1px solid #556b2f;
 }
