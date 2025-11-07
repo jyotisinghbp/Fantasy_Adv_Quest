@@ -1,15 +1,15 @@
 html, body {
-  height: 100%;           /* makes body cover the full viewport */
-  margin: 0;              /* removes default margin */
-  padding: 0;             /* removes default padding */
+  height: 100%;           
+  margin: 0;              
+  padding: 0;            
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('bg_image.jpg'); /* <-- your image file */
-  background-size: cover;       /* makes the image cover the whole page */
-  background-position: center;  /* centers the image */
-  background-repeat: no-repeat; /* prevents tiling */
+  background-image: url('bg_image.jpg');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
   background-color:rgba(34, 49, 34, 0.9); 
   color: #f0f0f0;
   text-align: center;
@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 600px;
   margin: auto;
-  background-color: rgba(34, 49, 34, 0.9); /* Dark green overlay */
+  background-color: rgba(34, 49, 34, 0.9); 
   padding: 20px;
   border-radius: 10px;
   position: absolute;
@@ -31,7 +31,7 @@ body {
 button {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #6b8e23; /* Olive green */
+  background-color: #6b8e23; 
   border: none;
   border-radius: 5px;
   color: white;
@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-  background-color: #556b2f; /* Darker olive */
+  background-color: #556b2f;
 }
 
 #inventory {
