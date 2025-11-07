@@ -1,5 +1,8 @@
+
 const storyElement = document.getElementById("story");
 const choicesElement = document.getElementById("choices");
+
+let inventory = [];
 
 const adventure = {
   start: {
@@ -12,7 +15,7 @@ const adventure = {
   leftPath: {
     text: "You encounter a friendly elf who offers you a magical sword.",
     choices: [
-      { text: "Accept the sword", next: "swordPath" },
+      { text: "Accept the sword", next: "swordPath", item: "Magical Sword" },
       { text: "Decline and walk away", next: "walkAway" }
     ]
   },
@@ -38,8 +41,24 @@ function showScene(sceneKey) {
   scene.choices.forEach(choice => {
     const button = document.createElement("button");
     button.textContent = choice.text;
-    button.onclick = () => showScene(choice.next);
+    button.onclick = () => {
+      if (choice.item) {
+        inventory.push(choice.item);
+        updateInventoryUI();
+      }
+      showScene(choice.next);
+    };
     choicesElement.appendChild(button);
+  });
+}
+
+function updateInventoryUI() {
+  const inventoryList = document.getElementById("inventory-list");
+  inventoryList.innerHTML = "";
+  inventory.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    inventoryList.appendChild(li);
   });
 }
 

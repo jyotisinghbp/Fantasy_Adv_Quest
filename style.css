@@ -41,3 +41,41 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+#inventory {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(46, 46, 62, 0.95);
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  width: 180px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4)
+}
+
+#inventory h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+#inventory-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#inventory-list li {
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  background-color: #3a3a4f;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
